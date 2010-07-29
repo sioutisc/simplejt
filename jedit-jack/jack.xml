@@ -1,0 +1,123 @@
+
+/* ********************************************************************* *
+ *                                                                       *
+ *   =============================================================       *
+ *   Copyright 2002-2010,                                                *
+ *   Christos Sioutis <christos.sioutis@gmail.com>                       *
+ *   =============================================================       *
+ *   This software was developed during my PhD studies at:               *
+ *                                                                       *
+ *   Knowledge Based Intelligent Engineering Systems Centre (KES)        *
+ *   School of Electrical and Information Engineering                    *
+ *   University of South Australia                                       *
+ *   =============================================================       *
+ *                                                                       *
+ *   This file is part of simplejt.                                      *
+ *                                                                       *
+ *   simplejt is free software: you can redistribute it and/or           *
+ *   modify it under the terms of the GNU Lesser General Public License  *
+ *   as published by the Free Software Foundation, either version 3 of   *
+ *   the License, or (at your option) any later version.                 *
+ *                                                                       *
+ *   simplejt is distributed in the hope that it will be useful,         *
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of      *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the       *
+ *   GNU Lesser General Public License for more details.                 *
+ *                                                                       *
+ *   You should have received a copy of the GNU Lesser General Public    *
+ *   License along with simplejt.                                        *
+ *   If not, see <http://www.gnu.org/licenses/>.                         *
+ *                                                                       *
+ * ********************************************************************* */
+
+ In the Jedit installation open the "modes" subdirectory.
+ Copy java.xml to jack.xml and add the following keywords.
+
+			<KEYWORD1>addfact</KEYWORD1>
+			<KEYWORD1>BeliefState</KEYWORD1>
+			<KEYWORD1>delfact</KEYWORD1>
+			<KEYWORD1>endfact</KEYWORD1>
+			<KEYWORD1>logical</KEYWORD1>
+			<KEYWORD1>modfact</KEYWORD1>
+			<KEYWORD1>moddb</KEYWORD1>
+			<KEYWORD1>newfact</KEYWORD1>
+			<KEYWORD1>Tuple</KEYWORD1>
+			<KEYWORD1>behavior</KEYWORD1>
+			<KEYWORD1>data</KEYWORD1>
+			<KEYWORD1>external</KEYWORD1>
+			<KEYWORD1>field</KEYWORD1>
+			<KEYWORD1>implementing</KEYWORD1>
+			<KEYWORD1>method</KEYWORD1>
+			<KEYWORD1>query</KEYWORD1>
+			<KEYWORD1>Recover</KEYWORD1>
+			<KEYWORD1>ApplicableChoice</KEYWORD1>
+			<KEYWORD1>ApplicableExclusion</KEYWORD1>
+			<KEYWORD1>PlanBindings</KEYWORD1>
+			<KEYWORD1>OnError</KEYWORD1>
+			<KEYWORD1>PostPlanChoice</KEYWORD1>
+			<KEYWORD1>PlanChoiceEvent</KEYWORD1>
+			<KEYWORD1>when</KEYWORD1>
+
+			<KEYWORD2>#agent</KEYWORD2>
+			<KEYWORD2>#complex</KEYWORD2>
+			<KEYWORD2>#chooses</KEYWORD2>
+			<KEYWORD2>#exports</KEYWORD2>
+			<KEYWORD2>#function</KEYWORD2>
+			<KEYWORD2>#global</KEYWORD2>
+			<KEYWORD2>#handles</KEYWORD2>
+			<KEYWORD2>#has</KEYWORD2>
+			<KEYWORD2>#imports</KEYWORD2>
+			<KEYWORD2>#indexed</KEYWORD2>
+			<KEYWORD2>#key</KEYWORD2>
+			<KEYWORD2>#linear</KEYWORD2>
+			<KEYWORD2>#modifies</KEYWORD2>
+			<KEYWORD2>#posted</KEYWORD2>
+			<KEYWORD2>#posts</KEYWORD2>
+			<KEYWORD2>#private</KEYWORD2>
+			<KEYWORD2>#reads</KEYWORD2>
+			<KEYWORD2>#reasoning</KEYWORD2>
+			<KEYWORD2>#sends</KEYWORD2>
+			<KEYWORD2>#set</KEYWORD2>
+			<KEYWORD2>#uses</KEYWORD2>
+			<KEYWORD2>#value</KEYWORD2>
+			<KEYWORD2>@wait_for</KEYWORD2>
+			<KEYWORD2>@action</KEYWORD2>
+			<KEYWORD2>@maintain</KEYWORD2>
+			<KEYWORD2>@post</KEYWORD2>
+			<KEYWORD2>@reply</KEYWORD2>
+			<KEYWORD2>@send</KEYWORD2>
+			<KEYWORD2>@subtask</KEYWORD2>
+			<KEYWORD2>@sleep</KEYWORD2>
+			<KEYWORD2>@achieve</KEYWORD2>
+			<KEYWORD2>@insist</KEYWORD2>
+			<KEYWORD2>@test</KEYWORD2>
+			<KEYWORD2>@determine</KEYWORD2>
+			<KEYWORD2>@parallel</KEYWORD2>
+			
+			
+			<KEYWORD2>#requires</KEYWORD2>
+			<KEYWORD2>#synthesizes</KEYWORD2>
+			<KEYWORD2>#synthesis</KEYWORD2>
+			<KEYWORD2>#inherits</KEYWORD2>
+			<KEYWORD2>#container</KEYWORD2>
+			<KEYWORD2>#applicable_for</KEYWORD2>
+			<KEYWORD2>#applicable_from</KEYWORD2>
+			<KEYWORD2>@team_achieve</KEYWORD2>
+			<KEYWORD2>#propagates</KEYWORD2>
+			<KEYWORD2>#connection</KEYWORD2>
+			<KEYWORD2>#performs</KEYWORD2>
+
+			<KEYWORD3>role</KEYWORD3>
+			<KEYWORD3>teamdata</KEYWORD3>
+			<KEYWORD3>method</KEYWORD3>
+			<KEYWORD3>member</KEYWORD3>
+			<KEYWORD3>changes</KEYWORD3>
+			<KEYWORD3>propagate</KEYWORD3>
+			
+			<KEYWORD3>agent</KEYWORD3>
+			<KEYWORD3>beliefset</KEYWORD3>
+			<KEYWORD3>capability</KEYWORD3>
+			<KEYWORD3>event</KEYWORD3>
+			<KEYWORD3>plan</KEYWORD3>
+			<KEYWORD3>view</KEYWORD3>
+			
