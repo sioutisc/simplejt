@@ -1,0 +1,74 @@
+<!--
+/* ********************************************************************* *
+ *                                                                       *
+ *   =============================================================       *
+ *   Copyright 2002-2010,                                                *
+ *   Christos Sioutis <christos.sioutis@gmail.com>                       *
+ *   =============================================================       *
+ *   This software was developed during my PhD studies at:               *
+ *                                                                       *
+ *   Knowledge Based Intelligent Engineering Systems Centre (KES)        *
+ *   School of Electrical and Information Engineering                    *
+ *   University of South Australia                                       *
+ *   =============================================================       *
+ *                                                                       *
+ *   This file is part of simplejt.                                      *
+ *                                                                       *
+ *   simplejt is free software: you can redistribute it and/or           *
+ *   modify it under the terms of the GNU Lesser General Public License  *
+ *   as published by the Free Software Foundation, either version 3 of   *
+ *   the License, or (at your option) any later version.                 *
+ *                                                                       *
+ *   simplejt is distributed in the hope that it will be useful,         *
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of      *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the       *
+ *   GNU Lesser General Public License for more details.                 *
+ *                                                                       *
+ *   You should have received a copy of the GNU Lesser General Public    *
+ *   License along with simplejt.                                        *
+ *   If not, see <http://www.gnu.org/licenses/>.                         *
+ *                                                                       *
+ * ********************************************************************* */
+-->
+
+<project name="ant-jackbuild" default="dist" basedir=".">
+    <description> Author: Christos Sioutis    </description>
+    
+  <!-- set global properties for this build -->
+  <property name="src" location="src"/>
+  <property name="build" location="build"/>
+  <property name="dist"  location="dist"/>
+  
+  
+  <!-- INITIALISATION  -->
+  <target name="init">
+    <mkdir dir="${build}"/>
+    <tstamp/>
+  </target>
+  
+  
+  <!-- COMPILATION -->
+  <target name="compile" depends="init"
+        description="compile the source " >
+    <!-- Compile the java code from ${src} into ${build} -->
+    <javac srcdir="${src}" destdir="${build}"/>
+  </target>
+  
+  <!-- CLEANING -->
+  <target name="clean"
+        description="clean up" >
+    <!-- Delete the ${build} and ${dist} directory trees -->
+    <delete dir="${build}"/>
+    <delete dir="${dist}"/>
+  </target>  
+  
+  <!-- DISTRIBUTING -->
+  <target name="dist" depends="compile"
+        description="generate the distribution" >
+    <!-- Create the distribution directory -->
+    <mkdir dir="${dist}/lib"/>
+    <!-- Put everything in ${build} into the MyProject-${DSTAMP}.jar file -->
+    <jar jarfile="${dist}/lib/ant-jackbuild.jar" basedir="${build}"/>
+  </target>
+
+</project>
